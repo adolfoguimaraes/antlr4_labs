@@ -1,0 +1,20 @@
+lexer grammar ExemploLexico;
+
+PROGRAM: 'program';
+INTEGER: 'integer';
+BOOLEAN: 'boolean';
+BEGIN: 'begin';
+END: 'end';
+VAR: 'var';
+FALSE: 'false';
+TRUE: 'true';
+WRITE: 'write';
+OPARI: ('+'|'-'|'*'|'/');
+OPREL: ('>'|'<'|'>='|'<='|'=='|'<>');
+PTVIG: ';';
+ABPAR: '(';
+FEPAR: ')';
+ATRIB: ':=';
+ID: [a-z][a-z0-9]*;
+NUM: [0-9]+;
+WS: [ \t\r\n]+ -> skip;
